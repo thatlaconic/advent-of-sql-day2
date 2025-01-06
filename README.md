@@ -1,0 +1,1 @@
+# advent-of-sql-day2
