@@ -6,7 +6,8 @@ Santa had modernized his mail system to handle the billions of electronic letter
 To make matters worse, the backup system (managed by two excitable elf twins, Binky and Blinky) had split the data across different tables, and somehow mixed in random "holiday sparkles" (aka noise) into the data.
 
 ## Challenge
-[Download Challenge data](
+[Download Challenge data](https://github.com/thatlaconic/advent-of-sql-day2/blob/main/advent_of_sql_day_2.sql)
+
 These tables contain pieces of a child's Christmas wish, but they're all mixed up with magical interference from the Northern Lights! We need to:
 * Filter out the holiday sparkles (noise)
 * Combine Binky and Blinky's tables
@@ -25,6 +26,7 @@ SELECT *
 FROM letters_a;
 ```
 **output**
+![](https://github.com/thatlaconic/advent-of-sql-day2/blob/main/letters_a.PNG)
 
 **input**
 ```sql
@@ -32,8 +34,10 @@ SELECT *
 FROM letters_b;
 ```
 **output**
+![](https://github.com/thatlaconic/advent-of-sql-day2/blob/main/letters_b.PNG)
 
 ### Solution
+[Download Solution Code](https://github.com/thatlaconic/advent-of-sql-day2/blob/main/advent_answer_day2.sql)
 
 The values in the table are the numbers in ASCII which stands for the "American Standard Code for Information Interchange".
 ASCII is a 7-bit character set containing 128 characters.
@@ -57,7 +61,8 @@ OR result IN (' ', '!', '"', '''', '(', ')', ',', '-', '.', ':', ';', '?', ';')
 ;
 ```
 **output**
-
+```
 Dear Santa, I hope this letter finds you well in the North Pole! I want a SQL course for Christmas!
+```
 
 
